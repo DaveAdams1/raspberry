@@ -23,4 +23,12 @@ else
   echo ""
 fi
 
+# set python to latest version
+pyenv global $PYVER
+# upgrade pip
+pip install --upgrade pip
+# install wheel
+pip install wheel
+
+
 
