@@ -4,6 +4,7 @@
 
 set_vars() {
   TMP=$HOME/scripts/tmp
+  # New
 
 }
 last_command() {
