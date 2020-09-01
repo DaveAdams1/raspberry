@@ -4,16 +4,18 @@
 
 set_vars() {
   TMP=$HOME/scripts/tmp
+  NAME=add_python_stuff
   # New
 
 }
+
+# last command will record the progress of this script, enabling it to skip to the next section after a reboot.
 last_command() {
-  if [ -f "$TMP"]
+  if [ -f "$TMP/$NAME" ]
   then
-    rm "$TMP"/lc.tmp
-    touch "$TMP"/lc.txt
+    tail -1 $TMP/$NAME
   else
-    touch "$TMP/lc.txt"
+    touch "$TMP/$NAME"
   fi
 }
 update() {
